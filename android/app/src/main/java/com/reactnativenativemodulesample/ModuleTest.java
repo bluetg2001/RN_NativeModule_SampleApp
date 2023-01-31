@@ -21,8 +21,15 @@ public class ModuleTest extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void createCalendarEvent() {
+    public void onHandleNativeEvent() {
         Log.d("ModuleTest", "Create event called with name");
+    }
+
+    @Override
+    public Map<String, Object> getConstants() {
+        final Map<String, Object> constants = new HashMap<>();
+        constants.put("DEFAULT_EVENT_NAME", "New Event");
+        return constants;
     }
 
 }
