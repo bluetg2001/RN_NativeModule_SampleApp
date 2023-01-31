@@ -21,6 +21,7 @@ public class MyAppPackage implements ReactPackage {
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
+//        모듈화 할 패키지 추가
         modules.add(new ModuleTest(reactContext));
 
         return modules;
