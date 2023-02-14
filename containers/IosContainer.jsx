@@ -13,6 +13,11 @@ import {
 import {Header} from 'react-native/Libraries/NewAppScreen';
 
 function IosContainer() {
+  const {RCTIOSTestModule} = NativeModules;
+
+  console.log(RCTIOSTestModule, 'hihi');
+  // console.log(NativeModules, 'hihi');
+
   return (
     <SafeAreaView>
       <StatusBar />
