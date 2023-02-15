@@ -9,7 +9,7 @@ import React from 'react';
 import {Platform} from 'react-native';
 
 import AosContainer from './containers/AosContainer';
-import IosContainert from './containers/IosContainer';
+import IosContainer from './containers/IosContainer';
 
 function App() {
   if (Platform.OS === 'android') {
@@ -17,7 +17,7 @@ function App() {
   }
 
   if (Platform.OS === 'ios') {
-    return <IosContainert />;
+    return <IosContainer />;
   }
 }
 
